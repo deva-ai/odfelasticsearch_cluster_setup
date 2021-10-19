@@ -1,15 +1,17 @@
 Elasticsearch can operate as a single-node or multi-node cluster. 
 The steps to configure both are, in general, quite similar. this bash script will create and configure a multi-node cluster.
+
 Kibana will install in master node
 
-following command to excute the script:
+
+Execute the bash script:
 
 example:- 
-following nodes are am using
+Am Using Following Nodes:
 	
-	master=172.19.18.10
-	data-1=172.19.18.11
-	data-2=172.19.18.12
+	Master = 172.19.18.10
+	Data-1 = 172.19.18.11
+	Data-2 = 172.19.18.12
 
 Syntax:-
 	sh OpenDistroforElasticsearchClusterSetup.sh <master-ip> <datanode1-ip> <datanode2-ip> <node-type>
