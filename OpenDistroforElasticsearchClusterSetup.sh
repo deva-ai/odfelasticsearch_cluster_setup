@@ -173,10 +173,6 @@ install() {
 if [ $# -ne 4 ]; then
   echo $d" please pass the master & data node IP's and node-type then re-run the script "$d
   echo " "
-  echo "example:-
-           ./els_cluster.sh <master-ip> <datanode1-ip> <datanode2-ip> <node-type> "
-  echo "Note:-
-            following node-types are available 'master' & 'datanode1' and 'datanode2'"
   exit 1
 fi
 
