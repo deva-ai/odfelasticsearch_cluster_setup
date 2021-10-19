@@ -172,7 +172,6 @@ install() {
 }
 if [ $# -ne 4 ]; then
   echo $d" please pass the master & data node IP's and node-type then re-run the script "$d
-  echo " "
   exit 1
 fi
 
