@@ -21,6 +21,7 @@ check_os() {
   fi
 }
 
+
 clearCache() {
   sync; echo 1 > /proc/sys/vm/drop_caches
 }
@@ -44,8 +45,6 @@ installElastic() {
   else
     echo $d" Please check elasticsearch file directory's are there "$d
     service elasticsearch status
-
-
   fi
 }
 
@@ -138,13 +137,13 @@ checkClusterstatus() {
   curl -XGET https://$masternode:9200/_cat/nodes?v -u 'admin:admin' --insecure
 }
 
-
 install() {
   check_root
   check_os
   installElastic
   clearCache
 }
+
 if [ $# -ne 4 ]; then
   echo $d" please pass the master & data node IP's and node-type then re-run the script "$d
   exit 1
