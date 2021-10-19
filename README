@@ -1,2 +1,2 @@
 Elasticsearch can operate as a single-node or multi-node cluster. 
-The steps to configure both are, in general, quite similar. here we are showing how to create and configure a multi-node cluster.
+The steps to configure both are, in general, quite similar. this bash script will create and configure a multi-node cluster.
